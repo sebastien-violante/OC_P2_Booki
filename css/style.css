@@ -95,6 +95,78 @@ nav ul li:hover {
     color: var(--main-color);
 }
 
+/****** Search ***********/
+.search p {
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+form input {
+    border: 1px solid var(--main-bg-color);
+}
+
+form button {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: none !important;
+    text-align: center;
+    color: var(--main-bg-color);
+    font-weight: 700;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0 1em;
+}
+
+.localisation-icon {
+    background: var(--main-bg-color);
+    height: 50px;
+    width:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#search-button-icon {
+    display:none;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    border-radius: 25px;
+    border: 2px solid var(--main-bg-color);
+    background: none;
+}
+
+.filter-button:hover {
+    cursor: pointer;
+    background: var(--filter-bg-color);
+}
+
+.filter-button i {
+    margin: auto 10px auto 19px;
+}
+
+.filter-button p {
+    margin-right: 19px;
+    font-weight: 700;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
