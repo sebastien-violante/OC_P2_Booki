@@ -107,7 +107,6 @@ nav ul li:hover {
 
 form {
   display: flex;
-  height: 50px;
   width: 100%;
   max-width: 377px;
   margin: 35px 0;
@@ -121,36 +120,34 @@ form {
   justify-content: center;
   width: 50px;
   min-width: 50px;
-  border: 1px solid var(--main-bg-color);
+  height: 50px;
   border-radius: 15px 0 0 15px;
   background: var(--main-bg-color);
 }
 
 form input {
   flex: 1;
+  height: 50px;
   border-radius: 0;
   border: none;
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-}
-
-form input:focus {
-  outline: none;
+  cursor: pointer;
 }
 
 form button {
-  height: 52px;
+  height: 50px;
   width: 130px;
-  margin-top: -1px;
   border: none;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 0 15px 15px 0;
   background: var(--main-color);
   text-align: center;
   color: white;
   font-weight: 700;
+  cursor: pointer;
 }
 
 form button .fa-solid.fa-magnifying-glass {
@@ -282,7 +279,7 @@ form button .fa-solid.fa-magnifying-glass {
   font-size: 14px;
 }
 
-#hebergements-see-more {
+.hebergements-see-more {
   font-weight: 700;
   font-size: 18px;
   cursor: pointer;
