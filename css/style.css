@@ -34,12 +34,11 @@ a {
 }
 
 .card {
-  /* padding: 5px; suppression pour amélioration rayon image*/
-  border: 5px solid white; /* ajout pour amélioration rayon image */
+  border: 5px solid white;
   border-radius: 20px;
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  overflow: hidden; /* ajout pour amélioration rayon image */
+  overflow: hidden; 
 }
 
 .card img {
@@ -134,6 +133,10 @@ form input {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+form input:focus {
+  outline: none;
 }
 
 form button {
@@ -234,6 +237,7 @@ form button .fa-solid.fa-magnifying-glass {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
   width: 65%;
   padding: 30px;
@@ -263,7 +267,6 @@ form button .fa-solid.fa-magnifying-glass {
 .hebergements-cards img {
   width: 100%;
   height: 114px;
-  /*border-radius: 20px 20px 0 0;*/
 }
 
 .hebergements-cards .card-content {
@@ -305,8 +308,6 @@ form button .fa-solid.fa-magnifying-glass {
 .populaires-cards img {
   width: 33%;
   height: 136px;
- /* border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;*/
 }
 
 .populaires-cards .card-content {
@@ -389,11 +390,11 @@ footer section {
 footer section a {
   margin-bottom: 1em;
 }
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
@@ -441,6 +442,7 @@ footer section a {
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
   header {
     flex-direction: column;
@@ -460,7 +462,7 @@ footer section a {
     flex: 1;
     padding: 1em 0;
     border-top: 0;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--main-bg-color);
     transition: border-color 0.5s ease, color 0.5s ease;
   }
 
@@ -478,6 +480,7 @@ footer section a {
     width: 50px;
     min-width: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
   }
 
   form button span {
@@ -497,7 +500,7 @@ footer section a {
 
   .hebergements-and-populaires {
     flex-direction: column-reverse;
-    margin: 35px 0;
+    margin: 0;
   }
 
   .hebergements-and-populaires .populaires {
